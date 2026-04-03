@@ -1,0 +1,164 @@
+.neon-scroll {
+  background-color: #0a0a1a;
+  overflow-y: scroll;
+}
+
+/* Hero */
+.neon-hero {
+  background-color: #0a0a1a;
+  border-radius: 16;
+  padding: 20;
+  margin-bottom: 16;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), inset 0 0 20px rgba(0, 255, 255, 0.05);
+  border: 1 solid rgba(0, 255, 255, 0.4);
+}
+
+.neon-hero-title {
+  font-size: 22;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+.neon-hero-subtitle {
+  font-size: 12;
+  color: rgba(0, 255, 255, 0.6);
+  margin-top: 4;
+}
+
+.neon-hero-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  margin-top: 16;
+}
+
+.neon-btn {
+  flex-grow: 1;
+  height: 40;
+  border-radius: 6;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neon-btn-magenta {
+  border: 1 solid #ff00ff;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5), inset 0 0 10px rgba(255, 0, 255, 0.1);
+}
+
+.neon-btn-green {
+  border: 1 solid #00ff41;
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.5), inset 0 0 10px rgba(0, 255, 65, 0.1);
+}
+
+.neon-btn-yellow {
+  border: 1 solid #ffff00;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5), inset 0 0 10px rgba(255, 255, 0, 0.1);
+}
+
+.neon-btn-magenta-text { font-size: 11; color: #ff00ff; font-weight: bold; }
+.neon-btn-green-text { font-size: 11; color: #00ff41; font-weight: bold; }
+.neon-btn-yellow-text { font-size: 11; color: #ffff00; font-weight: bold; }
+
+/* Status card */
+.neon-status {
+  background-color: #0d0d2b;
+  border-radius: 14;
+  padding: 18;
+  margin-bottom: 16;
+  border-left: 3 solid #ff00ff;
+  box-shadow: 0 0 16px rgba(255, 0, 255, 0.2);
+}
+
+.neon-status-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14;
+}
+
+.neon-status-icon {
+  width: 48;
+  height: 48;
+  border-radius: 24;
+  background-color: rgba(255, 0, 255, 0.15);
+  border: 1 solid rgba(255, 0, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neon-status-icon-text {
+  font-size: 20;
+  color: #ff00ff;
+}
+
+.neon-status-body { flex-grow: 1; }
+
+.neon-status-title {
+  font-size: 14;
+  font-weight: bold;
+  color: #ff00ff;
+}
+
+.neon-status-subtitle {
+  font-size: 11;
+  color: rgba(255, 0, 255, 0.5);
+}
+
+.neon-progress-track {
+  height: 4;
+  border-radius: 2;
+  background-color: rgba(255, 0, 255, 0.15);
+  margin-top: 14;
+}
+
+.neon-progress-fill {
+  width: 78%;
+  height: 4;
+  border-radius: 2;
+  background-color: #ff00ff;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+}
+
+/* Badges */
+.neon-badges {
+  display: flex;
+  flex-direction: row;
+  gap: 8;
+  margin-bottom: 16;
+}
+
+.neon-badge {
+  flex-grow: 1;
+  background-color: #0a0a1a;
+  border-radius: 10;
+  padding: 14;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.neon-badge-cyan {
+  border: 1 solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.15);
+}
+
+.neon-badge-green {
+  border: 1 solid rgba(0, 255, 65, 0.3);
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.15);
+}
+
+.neon-badge-yellow {
+  border: 1 solid rgba(255, 255, 0, 0.3);
+  box-shadow: 0 0 12px rgba(255, 255, 0, 0.15);
+}
+
+.neon-badge-value-cyan { font-size: 22; font-weight: bold; color: #00ffff; }
+.neon-badge-value-green { font-size: 22; font-weight: bold; color: #00ff41; }
+.neon-badge-value-yellow { font-size: 22; font-weight: bold; color: #ffff00; }
+
+.neon-badge-label-cyan { font-size: 9; color: rgba(0, 255, 255, 0.5); margin-top: 2; }
+.neon-badge-label-green { font-size: 9; color: rgba(0, 255, 65, 0.5); margin-top: 2; }
+.neon-badge-label-yellow { font-size: 9; color: rgba(255, 255, 0, 0.5); margin-top: 2; }

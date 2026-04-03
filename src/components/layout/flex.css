@@ -1,0 +1,109 @@
+/* Containers */
+.flex-row-demo {
+  display: flex;
+  flex-direction: row;
+  gap: 8;
+  margin-bottom: 20;
+}
+
+.flex-col-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 8;
+  margin-bottom: 20;
+}
+
+.flex-wrap-demo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8;
+  margin-bottom: 20;
+}
+
+.flex-justify-demo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20;
+}
+
+.flex-align-demo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 8;
+  height: 120;
+  background-color: var(--bg-card);
+  border-radius: 12;
+  padding: 12;
+  margin-bottom: 20;
+  box-shadow: var(--shadow-sm);
+}
+
+.flex-grow-demo {
+  display: flex;
+  flex-direction: row;
+  gap: 8;
+  margin-bottom: 20;
+}
+
+/* Items */
+.flex-item {
+  border-radius: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item-sm {
+  border-radius: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sizing */
+.flex-grow-h60 {
+  flex-grow: 1;
+  height: 60;
+}
+
+.flex-h50 {
+  height: 50;
+}
+
+.flex-w100-h50 {
+  width: 100;
+  height: 50;
+}
+
+.flex-w60-h60 {
+  width: 60;
+  height: 60;
+}
+
+/* Align items — different heights */
+.flex-bar-1 { width: 50; height: 40; border-radius: 8; }
+.flex-bar-2 { width: 50; height: 70; border-radius: 8; }
+.flex-bar-3 { width: 50; height: 55; border-radius: 8; }
+.flex-bar-4 { width: 50; height: 90; border-radius: 8; }
+
+/* Grow ratios */
+.flex-grow-1 {
+  flex-grow: 1;
+  height: 60;
+  border-radius: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+  height: 60;
+  border-radius: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

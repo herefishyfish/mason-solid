@@ -1,0 +1,178 @@
+.neumorph-scroll {
+  background-color: #e0e5ec;
+  overflow-y: scroll;
+}
+
+.neumorph-title {
+  font-size: 18;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 10;
+}
+
+/* Raised card */
+.neumorph-card {
+  background-color: #e0e5ec;
+  border-radius: 20;
+  padding: 24;
+  margin-bottom: 16;
+  box-shadow: 8px 8px 16px #b8bec7, -8px -8px 16px #ffffff;
+}
+
+/* Player */
+.neumorph-player-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14;
+}
+
+.neumorph-player-disc {
+  width: 52;
+  height: 52;
+  border-radius: 26;
+  background-color: #e0e5ec;
+  box-shadow: 4px 4px 8px #b8bec7, -4px -4px 8px #ffffff, inset 2px 2px 4px #b8bec7, inset -2px -2px 4px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neumorph-player-disc-text {
+  font-size: 22;
+  color: #6C5CE7;
+}
+
+.neumorph-player-info { flex-grow: 1; }
+
+.neumorph-player-title {
+  font-size: 15;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.neumorph-player-subtitle {
+  font-size: 11;
+  color: #8a8a8a;
+}
+
+/* Progress */
+.neumorph-progress {
+  height: 6;
+  border-radius: 3;
+  background-color: #e0e5ec;
+  box-shadow: inset 2px 2px 4px #b8bec7, inset -2px -2px 4px #ffffff;
+  margin-top: 18;
+  margin-bottom: 14;
+}
+
+.neumorph-progress-fill {
+  width: 60%;
+  height: 6;
+  border-radius: 3;
+  background-color: #6C5CE7;
+  box-shadow: 0 0 8px rgba(108, 92, 231, 0.4);
+}
+
+/* Controls */
+.neumorph-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20;
+}
+
+.neumorph-btn-sm {
+  width: 40;
+  height: 40;
+  border-radius: 20;
+  background-color: #e0e5ec;
+  box-shadow: 4px 4px 8px #b8bec7, -4px -4px 8px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neumorph-btn-sm-text {
+  font-size: 14;
+  color: #666;
+}
+
+.neumorph-btn-lg {
+  width: 56;
+  height: 56;
+  border-radius: 28;
+  background-color: #e0e5ec;
+  box-shadow: 6px 6px 12px #b8bec7, -6px -6px 12px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neumorph-btn-lg-text {
+  font-size: 20;
+  color: #6C5CE7;
+}
+
+/* Stats */
+.neumorph-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 12;
+  margin-bottom: 16;
+}
+
+.neumorph-stat {
+  flex-grow: 1;
+  background-color: #e0e5ec;
+  border-radius: 16;
+  padding: 16;
+  box-shadow: 6px 6px 12px #b8bec7, -6px -6px 12px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.neumorph-stat-value-blue { font-size: 24; font-weight: bold; color: #0984E3; }
+.neumorph-stat-value-pink { font-size: 24; font-weight: bold; color: #E84393; }
+.neumorph-stat-value-green { font-size: 24; font-weight: bold; color: #00B894; }
+
+.neumorph-stat-label {
+  font-size: 10;
+  color: #8a8a8a;
+  margin-top: 2;
+}
+
+/* Pressed / Raised */
+.neumorph-toggle-row {
+  display: flex;
+  flex-direction: row;
+  gap: 12;
+}
+
+.neumorph-pressed {
+  flex-grow: 1;
+  height: 48;
+  border-radius: 14;
+  background-color: #e0e5ec;
+  box-shadow: inset 4px 4px 8px #b8bec7, inset -4px -4px 8px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neumorph-raised {
+  flex-grow: 1;
+  height: 48;
+  border-radius: 14;
+  background-color: #e0e5ec;
+  box-shadow: 4px 4px 8px #b8bec7, -4px -4px 8px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neumorph-label-purple { font-size: 12; color: #6C5CE7; font-weight: bold; }
+.neumorph-label-blue { font-size: 12; color: #0984E3; font-weight: bold; }
+.neumorph-label-pink { font-size: 12; color: #E84393; font-weight: bold; }

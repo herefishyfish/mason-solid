@@ -1,11 +1,149 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ============================================
+   CSS Custom Properties — Light Mode (default)
+   ============================================ */
+.ns-root {
+  /* Backgrounds */
+  --bg-page: #c1cdce;
+  --bg-card: #ffffff;
+  --bg-hero: #1a1a2e;
+  --bg-showcase: #edf1f9;
 
+  /* Text */
+  --text-primary: #1a1a2e;
+  --text-secondary: #555;
+  --text-tertiary: #888;
+  --text-muted: #999;
+  --text-faint: #aaa;
+  --text-ghost: #ccc;
+  --text-dark: #333;
+
+  /* Accent palette */
+  --color-blue: #0984E3;
+  --color-purple: #6C5CE7;
+  --color-pink: #E84393;
+  --color-green: #00B894;
+  --color-orange: #E17055;
+  --color-red: #FF6B6B;
+  --color-yellow: #FDCB6E;
+
+  /* Borders & dividers */
+  --divider: #f0f0f0;
+  --border-light: #eee;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 40px rgba(26,26,46,0.4);
+
+  /* Text on dark surfaces */
+  --text-on-dark: #ffffff;
+  --text-on-dark-muted: rgba(255,255,255,0.7);
+  --text-on-dark-faint: rgba(255,255,255,0.5);
+}
+
+/* =============================
+   Dark Mode Overrides
+   ============================= */
+.ns-root .ns-dark {
+  --bg-page: #1b1f28;
+  --bg-card: #2a2e37;
+  --bg-hero: #0f1117;
+  --bg-showcase: #1b1f28;
+
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #888;
+  --text-muted: #777;
+  --text-faint: #666;
+  --text-ghost: #555;
+  --text-dark: #ccc;
+
+  --divider: #3a3e47;
+  --border-light: #3a3e47;
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.35);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
+}
+
+/* =============================
+   Global page
+   ============================= */
 .ns-light Page {
-  background-color: #edf1f9;
+  background-color: var(--bg-page);
 }
 
 .ns-dark Page {
-  background-color: #1b1f28;
+  background-color: var(--bg-page);
+}
+
+/* =============================
+   Shared layout
+   ============================= */
+.page-scroll {
+  background-color: var(--bg-page);
+  overflow-y: scroll;
+}
+
+.page-content {
+  padding: 24;
+  padding-bottom: 80;
+}
+
+/* =============================
+   Shared typography
+   ============================= */
+.section-title {
+  font-size: 16;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 8;
+}
+
+.section-title-lg {
+  font-size: 18;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 10;
+}
+
+/* =============================
+   Accent background utilities
+   ============================= */
+.bg-blue { background: #0000ff; }
+.bg-purple { background: #800080; }
+.bg-pink { background: #ffc0cb; }
+.bg-green { background: #008000; }
+.bg-orange { background: #ffa500; }
+.bg-red { background: #ff0000; }
+.bg-yellow { background: #ffff00; }
+.bg-dark { background: #2e2e2e; }
+
+/* =============================
+   Shared demo labels
+   ============================= */
+.label-white {
+  color: white;
+  font-size: 13;
+  font-weight: bold;
+}
+
+.label-white-sm {
+  color: white;
+  font-size: 12;
+}
+
+.label-white-xs {
+  color: white;
+  font-size: 11;
+}
+
+.label-dark {
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.label-dark-sm {
+  color: var(--text-dark);
+  font-size: 12;
 }

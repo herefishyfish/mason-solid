@@ -1,0 +1,135 @@
+.brutal-scroll {
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+
+/* Hero */
+.brutal-hero {
+  background-color: #ffde00;
+  border-radius: 0;
+  padding: 20;
+  margin-bottom: 16;
+  border: 4 solid #000000;
+  box-shadow: 6px 6px 0 #000000;
+}
+
+.brutal-hero-title {
+  font-size: 28;
+  font-weight: bold;
+  color: #000000;
+}
+
+.brutal-hero-subtitle {
+  font-size: 13;
+  color: #333;
+  margin-top: 4;
+}
+
+.brutal-hero-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  margin-top: 14;
+}
+
+.brutal-btn-dark {
+  flex-grow: 1;
+  height: 44;
+  background-color: #000000;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brutal-btn-dark-text {
+  font-size: 12;
+  color: #ffde00;
+  font-weight: bold;
+}
+
+.brutal-btn-outline {
+  flex-grow: 1;
+  height: 44;
+  background-color: #ffffff;
+  border-radius: 0;
+  border: 3 solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brutal-btn-outline-text {
+  font-size: 12;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Info cards */
+.brutal-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  margin-bottom: 16;
+}
+
+.brutal-info-card {
+  flex-grow: 1;
+  border-radius: 0;
+  padding: 16;
+  border: 3 solid #000000;
+  box-shadow: 4px 4px 0 #000000;
+}
+
+.brutal-info-red { background-color: #ff5555; }
+.brutal-info-green { background-color: #50fa7b; }
+.brutal-info-cyan { background-color: #8be9fd; }
+
+.brutal-info-icon {
+  font-size: 30;
+  font-weight: bold;
+  color: #000;
+}
+
+.brutal-info-label {
+  font-size: 10;
+  color: #000;
+  font-weight: bold;
+  margin-top: 4;
+}
+
+/* List */
+.brutal-list {
+  background-color: #ffffff;
+  border-radius: 0;
+  border: 3 solid #000000;
+  box-shadow: 5px 5px 0 #000000;
+}
+
+.brutal-list-item {
+  padding: 14;
+  border-bottom: 2 solid #000000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brutal-list-item-last {
+  padding: 14;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brutal-list-text {
+  font-size: 13;
+  font-weight: bold;
+  color: #000;
+}
+
+.brutal-list-arrow {
+  font-size: 12;
+  color: #000;
+}

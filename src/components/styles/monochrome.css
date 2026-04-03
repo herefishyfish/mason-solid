@@ -1,0 +1,201 @@
+.mono-scroll {
+  background-color: #f7f7f7;
+  overflow-y: scroll;
+}
+
+/* Hero */
+.mono-hero {
+  background-color: #1a1a1a;
+  border-radius: 20;
+  padding: 30;
+  margin-bottom: 20;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.mono-hero-title {
+  font-size: 28;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.mono-hero-subtitle {
+  font-size: 13;
+  color: rgba(255,255,255,0.5);
+  margin-top: 4;
+}
+
+.mono-title {
+  font-size: 16;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 10;
+}
+
+/* Grayscale cards */
+.mono-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  margin-bottom: 20;
+}
+
+.mono-stat-card {
+  flex-grow: 1;
+  border-radius: 14;
+  padding: 16;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.mono-stat-white { background-color: #ffffff; border: 1 solid #e8e8e8; }
+.mono-stat-light { background-color: #f0f0f0; border: 1 solid #e0e0e0; }
+.mono-stat-gray { background-color: #e0e0e0; border: 1 solid #ccc; }
+
+.mono-stat-value-1 { font-size: 24; font-weight: bold; color: #1a1a1a; }
+.mono-stat-value-2 { font-size: 24; font-weight: bold; color: #333333; }
+.mono-stat-value-3 { font-size: 24; font-weight: bold; color: #444444; }
+
+.mono-stat-label { font-size: 10; margin-top: 2; }
+.mono-stat-label-1 { color: #999; }
+.mono-stat-label-2 { color: #888; }
+.mono-stat-label-3 { color: #777; }
+
+/* Shade scale */
+.mono-shade-scale {
+  display: flex;
+  flex-direction: row;
+  height: 50;
+  border-radius: 12;
+  overflow: hidden;
+  margin-bottom: 20;
+}
+
+.mono-shade { flex-grow: 1; }
+.mono-shade-0 { background-color: #000000; }
+.mono-shade-1 { background-color: #1a1a1a; }
+.mono-shade-2 { background-color: #333333; }
+.mono-shade-3 { background-color: #555555; }
+.mono-shade-4 { background-color: #777777; }
+.mono-shade-5 { background-color: #999999; }
+.mono-shade-6 { background-color: #bbbbbb; }
+.mono-shade-7 { background-color: #dddddd; }
+.mono-shade-8 { background-color: #f0f0f0; }
+.mono-shade-9 { background-color: #ffffff; }
+
+/* Profile */
+.mono-profile {
+  background-color: #ffffff;
+  border-radius: 16;
+  margin-bottom: 20;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1 solid #eee;
+}
+
+.mono-profile-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14;
+  padding: 18;
+  border-bottom: 1 solid #f0f0f0;
+}
+
+.mono-profile-avatar {
+  width: 48;
+  height: 48;
+  border-radius: 24;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mono-profile-avatar-text {
+  font-size: 20;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mono-profile-info { flex-grow: 1; }
+
+.mono-profile-name {
+  font-size: 15;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.mono-profile-handle {
+  font-size: 11;
+  color: #aaa;
+}
+
+.mono-profile-body { padding: 18; }
+
+.mono-profile-text {
+  font-size: 13;
+  color: #666;
+}
+
+/* Buttons */
+.mono-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  margin-bottom: 20;
+}
+
+.mono-btn {
+  flex-grow: 1;
+  height: 44;
+  border-radius: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mono-btn-primary { background-color: #1a1a1a; }
+.mono-btn-secondary { background-color: #e0e0e0; }
+.mono-btn-outline { background-color: transparent; border: 2 solid #1a1a1a; }
+
+.mono-btn-primary-text { font-size: 13; color: #ffffff; font-weight: bold; }
+.mono-btn-secondary-text { font-size: 13; color: #333; font-weight: bold; }
+.mono-btn-outline-text { font-size: 13; color: #1a1a1a; font-weight: bold; }
+
+/* Notifications */
+.mono-notif-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8;
+}
+
+.mono-notif {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12;
+  background-color: #ffffff;
+  border-radius: 12;
+  padding: 14;
+  border: 1 solid #eee;
+}
+
+.mono-notif-dark { border-left: 4 solid #1a1a1a; }
+.mono-notif-mid { border-left: 4 solid #888; }
+.mono-notif-light { border-left: 4 solid #ddd; }
+
+.mono-notif-body { flex-grow: 1; }
+
+.mono-notif-title {
+  font-size: 13;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.mono-notif-subtitle {
+  font-size: 11;
+  color: #999;
+}
+
+.mono-notif-time {
+  font-size: 10;
+  color: #ccc;
+}

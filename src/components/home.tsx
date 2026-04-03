@@ -1,4 +1,5 @@
 import { navigate } from '../navigation'
+import './home.css'
 
 const pages = [
   { name: 'Flex', color: '#0984E3', icon: '⬛', desc: 'Flexbox layouts' },
@@ -15,32 +16,33 @@ const pages = [
   { name: 'GradientMesh', color: '#667eea', icon: '🌈', desc: 'Layered color orbs' },
   { name: 'Monochrome', color: '#555555', icon: '◑', desc: 'Single-hue palette' },
   { name: 'TypographyScale', color: '#2d3436', icon: 'Aa', desc: 'Font size & weight ramp' },
+  { name: 'PseudoStates', color: '#e84393', icon: '◉', desc: 'Active, focus, blur, disabled' },
 ]
 
 export default function Home() {
-
   return (
     <>
       <actionbar title="Mason Layouts" />
-      <div style={{ 'background-color': '#fafafa', 'overflow-y': 'scroll' }}>
-        <div style={{ padding: '24', 'padding-bottom': '80' }}>
+      <div class="page-scroll">
+        <div class="page-content" style="background: blue;">
 
         {/* Hero */}
-        <div style={{ 'background-color': '#1a1a2e', 'border-radius': '20', padding: '30', 'margin-bottom': '24', 'box-shadow': '0 12px 40px rgba(26, 26, 46, 0.4)' }}>
-          <p style={{ 'font-size': '28', 'font-weight': 'bold', color: 'white' }}>Mason Layouts</p>
-          <p style={{ 'font-size': '14', color: 'rgba(255,255,255,0.7)', 'margin-top': '4' }}>Explore CSS layout demos for NativeScript</p>
+        <div class="home-hero">
+          <p class="home-hero-title">Mason Layouts</p>
+          <p class="home-hero-subtitle">Explore CSS layout demos for NativeScript</p>
         </div>
 
         {/* Page Grid */}
-        <div style={{ display: 'grid', 'grid-template-columns': '1fr 1fr', gap: '14' }}>
+        <div class="home-grid">
           {pages.map((page) => (
             <div
+              class="home-card"
               on:tap={() => navigate(page.name)}
-              style={{ 'background-color': 'white', 'border-radius': '16', padding: '20', 'box-shadow': '0 4px 16px rgba(0,0,0,0.08)', 'border-top': `4px solid ${page.color}` }}
+              style={{ 'border-top': `4px solid ${page.color}` }}
             >
-              <p style={{ 'font-size': '28', 'margin-bottom': '8' }}>{page.icon}</p>
-              <p style={{ 'font-size': '17', 'font-weight': 'bold', color: page.color }}>{page.name}</p>
-              <p style={{ 'font-size': '12', color: '#888', 'margin-top': '4' }}>{page.desc}</p>
+              <p class="home-card-icon">{page.icon}</p>
+              <p class="home-card-title" style={{ color: page.color }}>{page.name}</p>
+              <p class="home-card-desc">{page.desc}</p>
             </div>
           ))}
         </div>

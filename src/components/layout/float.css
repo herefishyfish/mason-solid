@@ -1,0 +1,112 @@
+.float-card {
+  background-color: var(--bg-card);
+  border-radius: 12;
+  padding: 16;
+  margin-bottom: 20;
+  box-shadow: var(--shadow-sm);
+}
+
+.float-text {
+  font-size: 13;
+  color: var(--text-secondary);
+}
+
+.float-text-clear {
+  font-size: 13;
+  color: var(--text-secondary);
+  clear: both;
+}
+
+/* Float left */
+.float-left-box {
+  float: left;
+  width: 80;
+  height: 80;
+  background-color: var(--color-blue);
+  border-radius: 10;
+  margin-right: 12;
+  margin-bottom: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Float right */
+.float-right-box {
+  float: right;
+  width: 80;
+  height: 80;
+  background-color: var(--color-pink);
+  border-radius: 10;
+  margin-left: 12;
+  margin-bottom: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Multiple floats — gallery items */
+.float-gallery-item {
+  float: left;
+  width: 60;
+  height: 60;
+  border-radius: 8;
+  margin-right: 8;
+  margin-bottom: 8;
+}
+
+.float-article-icon {
+  font-size: 24;
+}
+
+/* Article layout */
+.float-article-image {
+  float: left;
+  width: 100;
+  height: 100;
+  background-color: var(--bg-hero);
+  border-radius: 12;
+  margin-right: 14;
+  margin-bottom: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.float-article-title {
+  font-size: 15;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 4;
+}
+
+.float-article-subtitle {
+  font-size: 12;
+  color: var(--text-tertiary);
+  margin-bottom: 8;
+}
+
+/* Mixed left/right */
+.float-left-icon {
+  float: left;
+  width: 70;
+  height: 70;
+  background-color: var(--color-blue);
+  border-radius: 10;
+  margin-right: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.float-right-icon {
+  float: right;
+  width: 70;
+  height: 70;
+  background-color: var(--color-pink);
+  border-radius: 10;
+  margin-left: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

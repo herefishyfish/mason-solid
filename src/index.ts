@@ -1,38 +1,44 @@
 import { render } from "@nativescript-community/solid-js";
 import { Application } from "@nativescript/core";
 import {
-  document,
-  registerDOMElement,
-  makeTweakable,
-  makeView,
-  scope,
-} from "dominative";
+  Br,
+  Button,
+  Img,
+  Input,
+  TextArea,
+} from "@triniwiz/nativescript-masonkit";
 import {
-  Div,
-  Section,
-  Header,
-  Footer,
+  A,
   Article,
-  Main,
-  Nav,
   Aside,
-  Span,
+  B,
+  Blockquote,
   Code,
+  Div,
+  Footer,
   H1,
   H2,
   H3,
   H4,
   H5,
   H6,
-  P,
-  Ul,
+  Header,
   Li,
-  Blockquote,
-  B,
+  Main,
+  Nav,
+  P,
+  Section,
+  Span,
   Strong,
-  A,
+  Ul,
 } from "@triniwiz/nativescript-masonkit/web";
-import { Img, Button, Input, Br } from "@triniwiz/nativescript-masonkit";
+import {
+  document,
+  makeTweakable,
+  makeView,
+  registerDOMElement,
+  scope,
+} from "dominative";
 import { App } from "./app";
 
 // Register a MasonKit layout-type element (container views).
@@ -41,7 +47,10 @@ import { App } from "./app";
 // (makeLayout can't be used because MasonKit extends CustomLayoutView, not LayoutBase)
 function registerMasonLayout(name: string, cls: any) {
   delete (scope as any)[name];
-  registerDOMElement(name, makeTweakable(makeView(cls, { childrenPolicy: 'layout' }), null));
+  registerDOMElement(
+    name,
+    makeTweakable(makeView(cls, { childrenPolicy: "layout" }), null),
+  );
 }
 
 // Register a MasonKit text-type element.
@@ -49,12 +58,12 @@ function registerMasonLayout(name: string, cls: any) {
 // then patches in text-node handling so DOM text nodes (nodeType 3) trigger
 // MasonKit's textProperty which reads childNodes and creates native MasonTextNode instances.
 function registerMasonText(name: string, cls: any) {
-  const Wrapped = makeView(cls, { childrenPolicy: 'layout' });
+  const Wrapped = makeView(cls, { childrenPolicy: "layout" });
 
   const origInsert = Wrapped.prototype.__dominative_onInsertChild;
   Wrapped.prototype.__dominative_onInsertChild = function (
     child: any,
-    ref: any
+    ref: any,
   ) {
     origInsert.call(this, child, ref);
     if (child.nodeType === 3) {
@@ -87,6 +96,7 @@ registerMasonLayout("ul", Ul);
 registerMasonLayout("img", Img);
 registerMasonLayout("br", Br);
 registerMasonLayout("input", Input);
+registerMasonLayout("textarea", TextArea);
 
 // Text-type elements (text content views)
 registerMasonText("span", Span);

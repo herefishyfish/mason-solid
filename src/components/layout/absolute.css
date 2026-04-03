@@ -1,0 +1,207 @@
+/* Basic positioning */
+.abs-container {
+  position: relative;
+  height: 200;
+  background-color: var(--bg-card);
+  border-radius: 14;
+  margin-bottom: 20;
+  box-shadow: var(--shadow-sm);
+}
+
+.abs-box {
+  position: absolute;
+  width: 60;
+  height: 60;
+  border-radius: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abs-top-left { top: 10; left: 10; }
+.abs-top-right { top: 10; right: 10; }
+.abs-bottom-left { bottom: 10; left: 10; }
+.abs-bottom-right { bottom: 10; right: 10; }
+
+.abs-center-box {
+  position: absolute;
+  top: 70;
+  left: 50%;
+  margin-left: -40;
+  width: 80;
+  height: 60;
+  border-radius: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abs-center-label {
+  font-size: 11;
+}
+
+/* Overlapping cards */
+.abs-overlap-container {
+  position: relative;
+  height: 180;
+  margin-bottom: 20;
+}
+
+.abs-layer {
+  position: absolute;
+  width: 200;
+  height: 120;
+  border-radius: 14;
+  padding: 16;
+}
+
+.abs-layer-back {
+  top: 0;
+  left: 0;
+  background-color: var(--color-blue);
+  box-shadow: 0 4px 16px rgba(9, 132, 227, 0.3);
+}
+
+.abs-layer-mid {
+  top: 30;
+  left: 40;
+  background-color: var(--color-purple);
+  box-shadow: 0 4px 16px rgba(108, 92, 231, 0.3);
+}
+
+.abs-layer-front {
+  top: 60;
+  left: 80;
+  background-color: var(--color-pink);
+  box-shadow: 0 4px 16px rgba(232, 67, 147, 0.3);
+}
+
+.abs-layer-title {
+  color: white;
+  font-weight: bold;
+}
+
+.abs-layer-sub {
+  color: rgba(255,255,255,0.7);
+  font-size: 11;
+}
+
+/* Badge overlay */
+.abs-badge-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20;
+  margin-bottom: 20;
+}
+
+.abs-badge-wrap {
+  position: relative;
+  width: 80;
+  height: 80;
+}
+
+.abs-badge-icon {
+  width: 80;
+  height: 80;
+  border-radius: 16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abs-badge-icon-text {
+  color: white;
+  font-size: 28;
+}
+
+.abs-badge {
+  position: absolute;
+  width: 24;
+  height: 24;
+  border-radius: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abs-badge-top-right { top: -6; right: -6; }
+.abs-badge-bottom-right { bottom: -6; right: -6; }
+
+.abs-badge-red {
+  background-color: var(--color-red);
+  box-shadow: 0 2px 6px rgba(255, 107, 107, 0.5);
+}
+
+.abs-badge-green {
+  background-color: var(--color-green);
+  box-shadow: 0 2px 6px rgba(0, 184, 148, 0.5);
+}
+
+.abs-badge-yellow {
+  background-color: var(--color-yellow);
+  box-shadow: 0 2px 6px rgba(253, 203, 110, 0.5);
+}
+
+.abs-badge-text {
+  color: white;
+  font-size: 11;
+  font-weight: bold;
+}
+
+.abs-badge-text-dark {
+  color: var(--text-dark);
+  font-size: 11;
+  font-weight: bold;
+}
+
+/* Card with absolute footer */
+.abs-footer-card {
+  position: relative;
+  height: 160;
+  background-color: var(--bg-card);
+  border-radius: 14;
+  margin-bottom: 20;
+  box-shadow: var(--shadow-md);
+}
+
+.abs-footer-body {
+  padding: 16;
+}
+
+.abs-footer-title {
+  font-size: 17;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.abs-footer-desc {
+  font-size: 12;
+  color: var(--text-tertiary);
+  margin-top: 4;
+}
+
+.abs-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-hero);
+  border-bottom-left-radius: 14;
+  border-bottom-right-radius: 14;
+  padding: 12;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.abs-footer-label {
+  color: rgba(255,255,255,0.7);
+  font-size: 12;
+}
+
+.abs-footer-link {
+  color: var(--color-green);
+  font-size: 12;
+  font-weight: bold;
+}
